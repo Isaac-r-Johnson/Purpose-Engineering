@@ -8,8 +8,22 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
 
+
+// GET Requests
 app.get('/', (req, res) => {
-    res.render('home', {text: "Hello World"});
+    res.render('home', {pageTitle: "Home"});
+});
+
+app.get('/services', (req, res) => {
+    res.render('services', {pageTitle: "Services"});
+});
+
+app.get('/about', (req, res) => {
+    res.render('about', {pageTitle: "About"});
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {pageTitle: "Contact"});
 });
 
 
