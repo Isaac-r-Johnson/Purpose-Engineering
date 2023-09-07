@@ -267,11 +267,11 @@ body {
 /* ABOUT */
 
 .about-grid{
-    animation-duration: 2s;
-    animation-name: fadeIn;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    animation-duration: 2s;
+    animation-name: fadeIn;
 }
 
 .the-img{
@@ -315,6 +315,89 @@ body {
 
 
 /* CONTACT */
+
+.top-header-box{
+    height: 300px;
+    background-color: #151515;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+
+
+.header-text-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.header-text-contact h1{
+    color: #FFD700
+}
+
+.header-text-contact h4{
+    color: #8C6F7B;
+    width: 300px;
+    font-weight: 300;
+}
+
+.contacting-img{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.cbc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+
+.cbc-1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cbc-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-box{
+    position: absolute;
+    background-color: black;
+    width: 400px;
+    height: 225px;
+    margin-top: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-box svg{
+    color: #FFD700;
+    margin: 10px;
+}
+
+.contact-box h4{
+    color: #FFD700;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+.contact-box h6{
+    color: #8C6F7B;
+    text-align: center;
+}
 
 /* FOOTER */
 footer{
