@@ -266,6 +266,54 @@ body {
 
 /* ABOUT */
 
+.about-grid{
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.the-img{
+    display: flex;
+    justify-content: center;
+}
+
+.the-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.the-text h1{
+    color: #FFD700;
+}
+.the-text h4{
+    color: #8C6F7B;
+    font-weight: 300!important;
+}
+
+@media (max-width: 700px){
+    .about-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .the-text{
+        padding-left: 50px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 420px){
+    .the-img img{
+        width: 60%;
+    }
+}
+
+
 /* CONTACT */
 
 /* FOOTER */
